@@ -42,7 +42,7 @@ import com.google.android.material.navigation.NavigationView
     }
 
      private fun doLogout(){
-        pref.removeAccessToken(this)
+         pref.removeAccessToken(this)
          startActivity(Intent(this, LoginActivity::class.java))
      }
 

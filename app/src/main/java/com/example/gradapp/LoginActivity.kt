@@ -10,7 +10,6 @@ import android.widget.TextView
 import com.android.volley.Request
 import com.android.volley.toolbox.JsonObjectRequest
 import com.android.volley.toolbox.Volley
-import com.example.gradapp.models.GeneralResponse
 import com.example.gradapp.models.LoginModel
 import com.example.gradapp.utils.Pref
 import com.example.gradapp.utils.Utility
@@ -22,6 +21,7 @@ class LoginActivity : AppCompatActivity() {
     lateinit var password : EditText
     lateinit var loginBtn : Button
     lateinit var gotoRegister : TextView
+    lateinit var forgotPwd : TextView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,10 +34,16 @@ class LoginActivity : AppCompatActivity() {
         password = findViewById(R.id.password)
         loginBtn = findViewById(R.id.loginBtn)
         gotoRegister = findViewById(R.id.gotoRegister)
+        forgotPwd = findViewById(R.id.forgotPwd)
 
 
         gotoRegister.setOnClickListener{
             startActivity(Intent(this, RegisterActivity::class.java))
+            finish()
+        }
+
+        forgotPwd.setOnClickListener{
+            startActivity(Intent(this, SendMailOtpCode::class.java))
             finish()
         }
 

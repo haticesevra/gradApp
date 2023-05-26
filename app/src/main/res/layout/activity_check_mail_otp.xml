@@ -1,0 +1,104 @@
+<!-- otp_check_layout.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckMailOtpActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_otp_code"
+        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:id="@+id/otpContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/titleTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp">
+
+        <EditText
+            android:id="@+id/digit1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:imeOptions="actionNext" />
+
+        <EditText
+            android:id="@+id/digit2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:layout_marginStart="8dp" />
+
+        <EditText
+            android:id="@+id/digit3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:layout_marginStart="8dp" />
+
+        <EditText
+            android:id="@+id/digit4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:layout_marginStart="8dp" />
+
+        <EditText
+            android:id="@+id/digit5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:layout_marginStart="8dp" />
+
+        <EditText
+            android:id="@+id/digit6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/verifyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/verify"
+        android:textSize="18sp"
+        android:layout_below="@id/otpContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>

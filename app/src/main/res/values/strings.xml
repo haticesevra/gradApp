@@ -9,4 +9,11 @@
     <string name="username">username</string>
     <string name="nav_open">nav_open</string>
     <string name="nav_close">nav_close</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="enter_otp_code">Enter OTP Code</string>
+    <string name="verify">Verify</string>
+    <string name="send">send</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="enter_password_again">Enter Password Again</string>
+    <string name="change_password">Change Password</string>
 </resources>
