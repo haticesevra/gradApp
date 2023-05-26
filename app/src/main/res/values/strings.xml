@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">gradApp</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="enter_email">Enter Mail</string>
+    <string name="enter_name">Enter name</string>
+    <string name="register">Register</string>
+</resources>
