@@ -4,4 +4,9 @@
     <string name="enter_email">Enter Mail</string>
     <string name="enter_name">Enter name</string>
     <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="username">username</string>
+    <string name="nav_open">nav_open</string>
+    <string name="nav_close">nav_close</string>
 </resources>
