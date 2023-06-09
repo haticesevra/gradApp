@@ -28,8 +28,6 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        title = "Login"
-
         email = findViewById(R.id.email)
         password = findViewById(R.id.password)
         loginBtn = findViewById(R.id.loginBtn)
@@ -64,6 +62,8 @@ class LoginActivity : AppCompatActivity() {
                    if(loginModel.status == "OK"){
                        val preference: Pref = Pref()
                        preference.setAccessToken(this, loginModel.token )
+                       preference.setUserEmail(this, loginModel.user.email)
+                       preference.setUserName(this, loginModel.user.username )
                        startActivity(Intent(this, HomeActivity::class.java))
                        finish()
                    }

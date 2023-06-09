@@ -17,7 +17,7 @@ import org.json.JSONObject
 class SendMailOtpCode : AppCompatActivity() {
 
     lateinit var email : EditText
-    lateinit var sendOtpButton : Button
+    private lateinit var sendOtpButton : Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {

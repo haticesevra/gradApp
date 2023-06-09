@@ -2,9 +2,41 @@
 <resources>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
+    <color name="purple_700">#2D165F</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <color name="tfe_color_primary">#ffa800</color>
+    <color name="tfe_color_primary_dark">#8692f7</color>
+    <color name="tfe_color_accent">#425066</color>
+
+    <color name="tfe_semi_transparent">#66000000</color>
+    <color name="lavender">#8692f7</color>
+    <color name="darkBlue">#333652</color>
+    <color name="softWhite">#FFE6E6ED</color>
+    <color name="pinkyred">#272359</color>
+    <color name="background">#E9EAEC</color>
+    <color name="gray">#8E929C</color>
+    <color name="pink1">#FB4570</color>
+    <color name="darkRed">#4E0B1B</color>
+    <color name="turquise1">#00B1B0</color>
+    <color name="yellow1">#FEC84D</color>
+    <color name="darkBlue2">#284B70</color>
+    <color name="mintGreen1">#77A290</color>
+    <color name="orange1">#FF4500</color>
+    <color name="purple1">#613659</color>
+    <color name="brown1">#A47551</color>
+    <color name="pink2">#FCA7A5</color>
+    <color name="skyBlue">#5885AF</color>
+    <color name="zeytinGreen">#B7AC44</color>
+    <color name="lightPurple">#B744A4</color>
+    <color name="fistikGreen">#4CAF50</color>
+    <color name="hardal">#A17E10</color>
+
+
+
+
 </resources>

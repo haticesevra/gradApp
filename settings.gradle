@@ -10,7 +10,8 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven { url "https://jitpack.io" }
     }
 }
-rootProject.name = "gradApp"
+rootProject.name = "Event Manager"
 include ':app'

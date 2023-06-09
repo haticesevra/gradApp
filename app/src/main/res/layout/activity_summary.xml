@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SummaryActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/summaryLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <ImageView
+                    android:id="@+id/headerImage"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_report"
+                    app:layout_constraintBottom_toTopOf="@id/summary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/summary"
+                    android:textSize="25sp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/darkBlue"
+                    android:fontFamily="sans-serif-medium"
+                    app:layout_constraintTop_toBottomOf="@id/headerImage"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+
+                <TextView
+                    android:id="@+id/summaryDetail"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/summaryDet"
+                    android:textSize="16sp"
+                    android:textColor="@color/darkBlue"
+                    android:fontFamily="sans-serif-light"
+
+                    app:layout_constraintTop_toBottomOf="@id/summary"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="@string/severity"
+                    android:id="@+id/severityBtn"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/skyBlue"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"
+                    app:cornerRadius = "20dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/summaryDetail"
+                    app:layout_constraintEnd_toStartOf="@id/etiValueBtn"
+                    app:layout_constraintStart_toStartOf="parent"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="@string/eti_value"
+                    android:id="@+id/etiValueBtn"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/skyBlue"
+                    android:textColor="@color/white"
+                    app:cornerRadius = "20dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintEnd_toStartOf="@id/etiTypeBtn"
+                    app:layout_constraintTop_toTopOf="@id/severityBtn"
+                    app:layout_constraintStart_toEndOf="@id/severityBtn"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="@string/eti_type"
+                    android:id="@+id/etiTypeBtn"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/skyBlue"
+                    android:textColor="@color/white"
+                    app:cornerRadius = "20dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/severityBtn"
+                    app:layout_constraintStart_toEndOf="@id/etiValueBtn"/>
+                <Button
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:text="@string/category"
+                    android:id="@+id/categoryBtn"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/skyBlue"
+                    android:textColor="@color/white"
+                    app:cornerRadius = "20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    app:layout_constraintTop_toBottomOf="@id/severityBtn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/subcategoryBtn"/>
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:text="@string/subcategory"
+                    android:id="@+id/subcategoryBtn"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/skyBlue"
+                    android:textColor="@color/white"
+                    app:cornerRadius = "20dp"
+                    android:layout_marginStart="5dp"
+                    app:layout_constraintTop_toTopOf="@id/categoryBtn"
+                    app:layout_constraintStart_toEndOf="@id/categoryBtn"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/sumDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="19sp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/darkBlue"
+                    android:layout_marginHorizontal="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/subcategoryBtn"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/home_drawer_layout"
+        app:menu="@menu/home_navigation_menu"/>
+</androidx.drawerlayout.widget.DrawerLayout>

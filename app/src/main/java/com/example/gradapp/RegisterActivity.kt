@@ -61,6 +61,13 @@ class RegisterActivity : AppCompatActivity() {
                     Log.i("mylog1", response.toString())
                    val generalResponse: GeneralResponse =  Gson().fromJson(response.toString(), GeneralResponse::class.java)
                     Utility.showAlert(this, "Register", generalResponse.message)
+                    if(generalResponse.status == "OK"){
+                        startActivity(Intent(this, LoginActivity::class.java))
+                        finish()
+                    }
+                    else{
+                        Utility.showAlert(this, "Error")
+                    }
                 },
                 { error ->
                     Log.i("mylog2", error.message.toString())
